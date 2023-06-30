@@ -16,13 +16,17 @@
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Quicksand&display=swap"
+            rel="stylesheet">
+
+        <!-- AOS CSS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
 
     <body>
 
         <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg shadow navbar-light bg-secondary text-light font-weight-bold sticky-top">
             <a class="navbar-brand">
                 <img src="./images/zb-logo.png" width="60" height="60" alt="">
             </a>
@@ -32,7 +36,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#landing">About Me<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
@@ -49,47 +53,100 @@
         </nav>
         <!-- Navbar End -->
 
-        <div class="container">
-            <section id="landing" class="m-5">
-                <div class="text-center">
+        <div>
+            <section id="landing" class="min-vh-100">
+                <div class="text-center mt-3 p-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                     <img src="./images/zb-pixels.png" width="300" height="300" alt="">
-                    <p>Hi, my name is</p>
-                    <h2><strong>Zara Bianca Agtang</strong></h2>
-                    <p><em>but you can call me <strong>Bianca</strong>...</em></p>
+
+                    <p class="mt-5 lead">Hi, my name is</p>
+                    <h1 class="display-3 text-uppercase"><strong>Bianca</strong></h1>
                     <h4><strong>Full Stack Web Developer</strong></h4>
-                    <p> I have a genuine passion for technology and a strong desire to dive into web
-                        development.
-                        Although I'm still in the early stages of learning, I already have practical knowledge
-                        and
-                        hands-on experience with Git, HTML, CSS, and Bootstrap.</p>
+                    <div class="offset-md-2 col-md-8">
+                        <p class="lead">I have a genuine passion for technology and a strong desire to dive into web
+                            development.
+                            Although I'm still in the early stages of learning, I already have practical knowledge
+                            and
+                            hands-on experience with Git, HTML, CSS, and Bootstrap.</p>
+                    </div>
+
+                    <div class="mt-5">
+                        <a href="https://www.facebook.com/beeyoungcadoo28" target="_blank"><img
+                                src="./images/fb-logo.png" alt="" width="30" height="30"></a>
+
+                        <a href="https://www.instagram.com/bee.youngca/" target="_blank"><img src="./images/ig-logo.png"
+                                alt="" width="30" height="30"></a>
+
+                        <a href="https://www.linkedin.com/in/zara-bianca-a-144673270/" target="_blank"><img
+                                src="./images/linkedin-logo.png" alt="" width="30" height="30"></a>
+                        <a href="https://gitlab.com/zara.agtang" target="_blank"><img src="./images/gitlab-logo.png"
+                                alt="" width="30" height="30"></a>
+                    </div>
                 </div>
             </section>
 
             <section id="projects">
-                <div class="container">
-                    <h2>Projects</h2>
-                    <!-- Add project content here -->
+                <div class="container-fluid min-vh-50" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="1000" data-aos-delay="300">
+                    <h2 class="mb-2 pt-5 text-center">Projects</h2>
+                    <div class="d-lg-flex justify-content-center p-md-5 row">
+
+                        <!-- 1st Project -->
+                        <div class="card bg-transparent col-xl-4 mb-5 mb-xl-0 text-center">
+                            <div class="card-body">
+                                <img src="./images/bootstrap-simple-styles.png" class="card-img-top">
+                                <h5 class="card-title">Bootstrap Simple Styles</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">HTML & Bootstrap</h6>
+                                <p class="card-text">Developed a mobile responsive website using Bootstrap Elements.</p>
+                            </div>
+                        </div>
+
+                        <!-- 2nd Project -->
+                        <div class="card bg-transparent col-xl-4 mb-5 mb-xl-0 text-center">
+                            <div class="card-body">
+                                <img src="./images/bootstrap-flex.png" class="card-img-top">
+                                <h5 class="card-title">Bootstrap Flex</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">HTML & Bootstrap</h6>
+                                <p class="card-text">Managed the one-directional layout of elements using flexbox
+                                    utilities from Bootstrap.</p>
+                            </div>
+                        </div>
+
+                        <!-- 3rd Project -->
+                        <div class="card bg-transparent col-xl-4 mb-5 mb-xl-0 text-center">
+                            <div class="card-body">
+                                <img src="./images/bootstrap-layout.png" class="card-img-top">
+                                <h5 class="card-title">Bootstrap Layouts</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">HTML & Bootstrap</h6>
+                                <p class="card-text">Developed a simple web portfolio using the best practices for
+                                    spacing, flex, and
+                                    grid systems.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section id="tools">
-                <div class="container">
-                    <h2>Tools</h2>
+                <div class="container-fluid min-vh-50" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="1000" data-aos-delay="300">
+                    <h2 class="mb-2 pt-5 text-center">Tools</h2>
                     <div id="core-tools" class="d-flex flex-column">
                         <div id="html" class="d-flex justify-content-center">
                             <img width="150" src="./images/logo-html5.png" />
+                            <img width="150" src="./images/logo-css3.png" />
                         </div>
                         <div id="css-js" class="d-flex justify-content-center">
-                            <img width="150" src="./images/logo-css3.png" />
+                            <img width="150" src="./images/logo-bootstrap.png" />
                             <img width="150" src="./images/logo-gitlab.png" />
+                            <img width="100" height="100" src="./images/logo-ps.png" />
                         </div>
                     </div>
             </section>
 
+
             <section id="contact">
-                <div class="container">
-                    <h2>Contact</h2>
-                    <!-- Add contact form here -->
+                <div class="container-fluid column col-xs-12 col-md-8 col-xl-4">
+                    <h2 class="mb-2 pt-5 text-center">Contact</h2>
                     <form>
                         <div class="form-group">
                             <label for="name">Name</label>
@@ -103,11 +160,69 @@
                             <label for="message">Message</label>
                             <textarea class="form-control" id="message" rows="5"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDiv">
+                            Submit
+                        </button>
                     </form>
+
+                    <div class="modal" id="modalDiv" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalCenteredLabel">Message successfully
+                                        submitted
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Thank you for contacting us!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m-auto d-flex justify-content-center">
+                    <div class="p-6">
+                        <a href="mailto:zara.agtang@gmail.com" target="_blank"><img src="./images/gmail-logo.png" alt=""
+                                width="30" height="30"></a>
+
+                        <a href="https://www.facebook.com/beeyoungcadoo28" target="_blank"><img
+                                src="./images/fb-logo.png" alt="" width="30" height="30"></a>
+
+                        <a href="https://www.instagram.com/bee.youngca/" target="_blank"><img src="./images/ig-logo.png"
+                                alt="" width="30" height="30"></a>
+
+                        <a href="https://www.linkedin.com/in/zara-bianca-a-144673270/" target="_blank"><img
+                                src="./images/linkedin-logo.png" alt="" width="30" height="30"></a>
+                        <a href="https://gitlab.com/zara.agtang" target="_blank"><img src="./images/gitlab-logo.png"
+                                alt="" width="30" height="30"></a>
+                    </div>
                 </div>
             </section>
         </div>
+
+
+        <!-- Footer Start -->
+        <footer class="bg-secondary text-white d-flex justify-content-center p-2">
+            <div class="mx-3">&copy; ZBCA2023</div>
+            <div>|</div>
+            <div class="mx-3">All rights reserved.</div>
+        </footer>
+        <!-- Footer End -->
+
+
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
